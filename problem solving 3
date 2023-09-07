@@ -1,0 +1,15 @@
+function reverseString(inputString) {
+  // Initialize an empty string to store the reversed string
+  let reversedString = "";
+
+  // Iterate through the input string in reverse order and append each character to the reversed string
+  for (let i = inputString.length - 1; i >= 0; i--) {
+    reversedString += inputString[i];
+  }
+
+  return reversedString;
+}
+
+// Test the function
+console.log(reverseString("Hello, World!")); // Output: "!dlroW ,olleH"
+console.log(reverseString("12345")); // Output: "54321"
